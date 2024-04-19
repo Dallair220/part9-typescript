@@ -3,8 +3,8 @@
 import express from 'express';
 const app = express();
 
-import calculateBmi from './exercises/bmiCalculator';
-import calculateExercises from './exercises/exerciseCalculator';
+import calculateBmi from './files/bmiCalculator';
+import calculateExercises from './files/exerciseCalculator';
 
 app.use(express.json());
 
