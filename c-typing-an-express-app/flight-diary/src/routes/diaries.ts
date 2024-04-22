@@ -4,8 +4,7 @@ import diaryService from '../services/diaryService';
 const router = express.Router();
 
 router.get('/', (_req, res) => {
-  const entries = diaryService.getEntries();
-  res.send(entries);
+  res.send(diaryService.getNonSensitiveEntries());
 });
 
 router.post('/', (_req, res) => {
