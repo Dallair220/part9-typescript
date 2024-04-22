@@ -1,0 +1,12 @@
+// 9.11: Patientor backend, step4
+
+import express from 'express';
+import patientService from '../services/patientService';
+
+const patientsRouter = express.Router();
+
+patientsRouter.get('/', (_req, res) => {
+  res.send(patientService.getPatients());
+});
+
+export default patientsRouter;
