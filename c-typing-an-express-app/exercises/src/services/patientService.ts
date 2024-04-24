@@ -1,11 +1,11 @@
 // 9.11: Patientor backend, step4
 
-import data from '../../data/patients';
+import patients from '../../data/patients';
 import { NonSensitivePatientData } from '../types';
 
 const getPatients = (): NonSensitivePatientData[] => {
   // add all properties except ssn
-  return data.map((entry) => ({
+  return patients.map((entry) => ({
     id: entry.id,
     name: entry.name,
     dateOfBirth: entry.dateOfBirth,
